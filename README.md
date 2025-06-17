@@ -1,32 +1,53 @@
 # Canadian Inflation Forecast Using Ridge Regression
 
 ## Overview
-This C++ project forecasts Canada's future inflation rate for the next 10 years (120 months) by leveraging historical monthly inflation data and applying Ridge Regression.
-
-The model builds a feature matrix using lagged inflation values and inflation target bounds, then trains a Ridge Regression model with the Eigen library. Results are visualized with Matplot++.
-
----
+This C++ program forecasts the future inflation rate of Canada for the next 10 years (120 months) using historical data and Ridge Regression.
 
 ## Features
-- Load historical monthly inflation data from CSV.
-- Construct feature matrix with lagged inflation and inflation target bounds.
-- Train Ridge Regression model using Eigen for linear algebra operations.
-- Predict future inflation over 120 months.
-- Visualize both historical and forecasted inflation using Matplot++.
-
----
+- Reads historical monthly inflation data from CSV.
+- Builds a feature matrix including lagged inflation and inflation target bounds.
+- Trains a Ridge Regression model using the Eigen library.
+- Forecasts future inflation using the trained model.
+- Visualizes historical and predicted inflation using Matplot++.
 
 ## Libraries Used
-- **Matplot++** — for visualization (introduced in Lecture 12)
-- **Eigen** — for matrix operations and Ridge regression
+- ✅ **Matplot++** — for data visualization
+- ✅ **Eigen** — for matrix operations and Ridge regression
 
----
+## How to Build
+This project uses **CMake**.
 
-## Requirements
-- C++17 compatible compiler (e.g., Clang, GCC)
-- CMake 3.15 or higher
-- Eigen (installed via Homebrew)
+### Requirements
+- CMake 3.15+
+- C++17 compiler (e.g., Clang or GCC)
+- Eigen installed via Homebrew:  
+  ```bash
+  brew install eigen
+  ```
 
-### Installing Eigen on macOS
+### Build Steps
 ```bash
-brew install eigen
+mkdir build
+cd build
+cmake ..
+make
+```
+
+This will generate the executable named `untitled3`.
+
+## How to Run
+```bash
+./untitled3
+```
+
+## Files Included
+- `main.cpp` - Source code
+- `CMakeLists.txt` - Build instructions
+- `libs/` - Contains Matplot++ library
+- `untitled3` - Precompiled binary 
+- `README.md` - This file
+
+## Author
+Liyuan Cao  140029  
+lc140029@student.sgh.waw.pl  
+Date: June 2025

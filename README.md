@@ -17,7 +17,7 @@ The model builds a feature matrix using lagged inflation values and inflation ta
 ---
 
 ## Libraries Used
-- **Matplot++** — for visualization (introduced in Lecture 12)
+- **Matplot++** — for visualization 
 - **Eigen** — for matrix operations and Ridge regression
 
 ---
